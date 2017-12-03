@@ -8,7 +8,7 @@ This application exposes a RESTful endpoint
 ####Compile, Build, and Deployment Instructions
 #####Compile and Execute
 ```bash
-mvn wildfly-swam:run
+mvn wildfly-swarm:run
 ```
 #####Create "fat" executable uberjar
 ```bash

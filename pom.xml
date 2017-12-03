@@ -26,6 +26,10 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>org.wildfly.swarm</groupId>
+                <artifactId>logging</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
