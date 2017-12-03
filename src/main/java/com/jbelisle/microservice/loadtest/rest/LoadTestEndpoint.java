@@ -14,9 +14,11 @@ public class LoadTestEndpoint {
     @Inject private LoadGenerator loadGenerator;
 
     @GET
-    @Path("iterations/{iterations}/requestId/{requestId}/")
+    @Path("iterations/{iterations}")
     public String doLoad(@PathParam("iterations") int iterations) throws Exception {
+        System.out.println("Starting load test with "+iterations);
         String time = this.loadGenerator.doWork(iterations);
+        System.out.println("Load test finished in "+time);
         return "Performed "+iterations+" in "+time;
     }
 
