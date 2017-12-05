@@ -26,7 +26,7 @@ Use this to decouple the wildfly container executable jar from the resulting war
 ```
 mvn package -Dswarm.hollow=true
 ```
-Alternatively, sonfigure the wildfly swarm plugin with `<hollow>true</hollow>` within the `pom.xml`
+Alternatively, configure the wildfly swarm plugin with `<hollow>true</hollow>` within the `pom.xml`
 
 ##### Run hollow uberjar and war
 ```bash
